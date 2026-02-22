@@ -15,8 +15,8 @@
    </head>
   <body>
     {% include 'nav.html' %}
-    <img class="img-fluid" id= "banner" src="https://039ce8c8-1c11-4ffe-b6bc-e80cce343f48-00-33ix04hwdj4jm.pike.replit.dev/static/banner.jpg"
-      height="320">
+    <img class="img-fluid" id="banner" src="{{ url_for('static', filename='banner.jpg') }}"
+height="320">
     <div class="container">
   <h1 class= "text-center mt-2 mb-4">HIRE_GATEWAY</h1>
       
@@ -28,7 +28,7 @@
     </p>
         </div>
         <div class="d-none d-md-block col-6">
-        <img src="/static/people.jpg" style="height: 320px;border-radius:4px;">
+        <img src="{{ url_for('static', filename='people.jpg') }}" style="height: 320px;border-radius:4px;">
         </div>
       </div>
     <h2 class="text-center mt-2 mb-4">OPEN POSITIONS</h2>
